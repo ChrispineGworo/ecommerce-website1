@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter Products</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/filter.css">
+</head>
+<body>
+
+    <img src="cat-cart.jpg" width="110px" height="100px">
+
+    <section class="container">
+        <form>
+            <i class="fa fa-search"></i>
+            <input type="text" name="" id="search-items" placeholder="search products" onkeyup="search()">
+        </form>
+
+        <button type="button" class="add-cart" onclick = "window.location.href='cart.html'">Place Your Order</button>
+
+        <div class="product-list" id="product-list">
+
+            <div class="product">
+                <img src="images/istockphoto-1273058761-1024x1024.jpg" class="product-img" width="200px" height="180px">
+                <div class="details">
+                    <h2>Data Analysis</h2>
+                    <h3>$6600.00</h3>
+                </div>
+            </div>
+            <div class="product">
+                <img src="images/procreator-ux-design-studio-VzJjPuk53sk-unsplash.jpg" class="product-img" width="200px" height="180px">
+                <div class="details">
+                    <h2>Facilitation</h2>
+                    <h3>$9600.00</h3>
+                </div>
+            </div>
+            <div class="product">
+                <img src="images/istockphoto-1276312812-1024x1024.jpg" class="product-img" width="200px" height="180px">
+                <div class="details">
+                    <h2>Machine Learning</h2>
+                    <h3>$7600.00</h3>
+                </div>
+            </div>
+            <div class="product">
+                <img src="images/istockphoto-616902766-1024x1024.jpg" class="product-img" width="200px" height="180px">
+                <div class="details">
+                    <h2>Deep Learning</h2>
+                    <h3>$9700.00</h3>
+                </div>
+            </div>
+            <div class="product">
+                <img src="images/istockphoto-871030872-1024x1024.jpg" class="product-img" width="200px" height="180px">
+                <div class="details">
+                    <h2>stock Analysis</h2>
+                    <h3>$6400.00</h3>
+                </div>
+            </div>
+            <div class="product">
+                <img src="images/florian-olivo-4hbJ-eymZ1o-unsplash.jpg" class="product-img" width="200px" height="180px">
+                <div class="details">
+                    <h2>Programming</h2>
+                    <h3>$7860.00</h3>
+                </div>
+            </div>
+            <div class="product">
+                <img src="images/ilya-pavlov-OqtafYT5kTw-unsplash.jpg" class="product-img" width="200px" height="180px">
+                <div class="details">
+                    <h2>Website Building</h2>
+                    <h3>$7600.00</h3>
+                </div>
+            </div>
+            <div class="product">
+                <img src="images/analysis2.jpg" class="product-img" width="200px" height="180px">
+                <div class="details">
+                    <h2>Data Science</h2>
+                    <h3>$10900.00</h3>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <script src="js/filter.js"></script>
+
+</body>
+</html>

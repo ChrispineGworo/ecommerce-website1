@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seller Dashboard</title>
+
+    <link rel="stylesheet" href="css/seller.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/search.css">
+
+</head>
+<body>
+
+    <img src="loader.gif" class="loader">
+
+    <div class="alert-box">
+        <img src="error.png" class="alert-img">
+        <p class="alert-msg">Error message</p>
+    </div>
+
+    <img src="coding-icon.png" class="logo">
+
+<!------------------------------bacome a seller------------------>
+
+    <div class="become-seller">
+        <p class="heading">become a seller</p>
+        <p class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis incidunt et aut aliquam animi. Id 
+            commodi dolore, accusantium ex corporis voluptatum similique sunt veritatis debitis quod quam accusamus rerum 
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis, inventore consectetur! A modi ipsam sit tenetur 
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate dolores, excepturi dicta veniam aperiam repudiandae 
+            earum architecto illum ea accusantium assumenda, amet rerum animi minus consequuntur voluptas hic repellat velit! 
+            eveniet neque commodi quibusdam, facilis nam repudiandae debitis nihil. Error aliquam quasi deleniti nobis? magni!
+        </p>
+        <button class="btn" id="apply-btn">Apply for Saller  account</button>
+        
+    </div>
+
+<!-------------------------------apply form------------------------>
+
+    <div class="apply-form hide">
+        <input type="text" id="business-name" placeholder="Business Name / Company Name / Shop Name">
+        <textarea id="business-add" placeholder="Address"></textarea>
+        <textarea id="about" placeholder="About"></textarea>
+        <input type="text" id="number" placeholder="Mobile Number">
+        <input type="checkbox" checked class="checkbox" id="terms-and-cond">
+        <label for="terms-and-cond">Agree to our terms and conditions <a href="">Terms and Conditions</a> </label>
+        <br>
+        <input type="checkbox" checked class="checkbox" id="legitInfo">
+        <label for="legitInfo">All information(s) is legitimate</a></label>
+        <button class="submit-btn" id="apply-form-btn">Apply</button>
+    </div>
+
+<!--------------------------------------------product list------------------------------->
+
+    <div class="product-listing">
+        <div class="add-product">
+            <p class="add-product-title">add product</p>
+            <button class="btn" onclick="location.href = '/addProduct' ">add product</button>
+        </div>
+        <img src="no product.png" class="no-product-image hide">
+
+        <!------------delete alert------------>
+        <div class="delete-alert">
+            <div class="alert">
+                <button class="close-btn"><img src="close.webp" width="50px" height="15px"></button>
+                <img src="delete warning.png" class="delete-svg">
+                <p class="text">Are you sure? You want to delete  this product?</p>
+                <button class="delete-btn">delete</button>
+            </div>
+        </div>
+
+        <!--------cards------------->
+        <div class="product-container">
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="tag">Draft</span>
+                    <img src="images/florian-olivo-4hbJ-eymZ1o-unsplash.jpg" class="product-thumb" width="180px" height="240px">
+                    <button class="card-action-btn edit-btn"><img src="pen edit.png" ></button>
+                    <button class="card-action-btn open-btn"><img src="arrow open.png" ></button>
+                    <button class="card-action-btn delete-popup-btn"><img src="delete2.png" ></button>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">HTML</h2>
+                    <p class="product-short-des">short description about HTML</p>
+                    <span class="price">$580</span><span class="actual-price">$1160</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/token.js"></script>
+    <script src="js/seller.js"></script>
+    <script src="js/createProduct.js"></script>
+    
+</body>
+</html>

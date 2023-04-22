@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chrisma: Add Product</title>
+
+    <link rel="stylesheet" href="css/signup.css">
+    <link rel="stylesheet" href="css/addProduct.css">
+
+</head>
+<body>
+
+    <img src="loader.gif" class="loader">
+
+    <div class="alert-box">
+        <img src="error.png" class="alert-img">
+        <p class="alert-msg"></p>
+    </div>
+
+    <img src="coding-icon.png" class="logo">
+
+    <div class="form">
+        <input type="text" id="product-name" maxlength="50" placeholder="product name">
+        <input type="text" id="short-des"  placeholder="short description about the product">
+        <textarea id="des" placeholder="detail description"></textarea>
+    </div>
+
+<!-----------------------------------------product image--------------------------------------------->
+
+    <div class="product-info">
+        <div class="product-image">
+            <p class="text">Program Image</p>
+        </div>
+        <div class="upload-image-sec">
+
+            <!---------------------------------------upload input------------------------------------------->
+
+            <p class="text"><img src="camera icon.jpg" width="25px" height="20px">upload image</p>
+            <div class="upload-catalogue">
+                <input type="file" class="fileupload" id="first-file-upload-btn" hidden>
+                <label for="first-file-upload-btn" class="upload-image"></label>
+                <input type="file" class="fileupload" id="second-file-upload-btn" hidden>
+                <label for="second-file-upload-btn" class="upload-image"></label>
+                <input type="file" class="fileupload" id="third-file-upload-btn" hidden>
+                <label for="third-file-upload-btn" class="upload-image"></label>
+                <input type="file" class="fileupload" id="fourth-file-upload-btn" hidden>
+                <label for="fourth-file-upload-btn" class="upload-image"></label>
+            </div>
+
+        </div>
+        <div class="select-sizes">
+            <p class="text">Programs Available</p>
+            <div class="sizes">
+                <input type="checkbox" class="size-checkbox" id="python" value="P">
+                <input type="checkbox" class="size-checkbox" id="R" value="R">
+                <input type="checkbox" class="size-checkbox" id="HTML" value="H">
+                <input type="checkbox" class="size-checkbox" id="C++" value="C">
+                <input type="checkbox" class="size-checkbox" id="STATA" value="S">
+                <input type="checkbox" class="size-checkbox" id="SQL" value="Q">
+                <input type="checkbox" class="size-checkbox" id="PowerBi" value="B">
+                <input type="checkbox" class="size-checkbox" id="Microsoft" value="M">
+                <input type="checkbox" class="size-checkbox" id="Tableau" value="T">
+            </div>
+        </div>
+    </div>
+
+    <div class="program-price">
+        <input type="number" id="actual-price" placeholder="actual price">
+        <input type="number" id="discount" placeholder="discount percentage">
+        <input type="number" id="sell-price" placeholder="selling price">
+    </div>
+
+    <input type="number" id="stock" min="20" placeholder="program in stocks (minimum 20)">
+
+    <textarea id="tags" placeholder="Enter categories here, for instance; Python, R, STATA (you should add Data Analysis or Data Visualization at start)"></textarea>
+
+    <input type="checkbox" class="checkbox" id="tac" checked>
+    <label for="tac">Chrisma Organization takes 40% from your total sell</label>
+
+    <div class="buttons">
+        <button class="btn" id="add-btn">add program</button>
+        <button class="btn" id="save-btn">save draft</button>
+    </div>
+    <script src="js/token.js"></script>
+    <script src="js/addProduct.js"></script>
+    
+</body>
+</html>

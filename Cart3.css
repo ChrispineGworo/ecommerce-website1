@@ -1,0 +1,344 @@
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'poppins',sans-serif;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+button{
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+i,span{
+    display: inline-block;
+}
+
+label,img{
+    display: block;
+}
+
+input{
+    font: inherit;
+    width: 100%;
+    border: none;
+}
+
+input:focus{
+    outline: 2px solid grey;
+}
+
+input::-webkit-inner-spin-button,input::-webkit-outer-spin-button{
+    appearance: none;
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+::-webkit-scrollbar{
+    width: 8px;
+}
+
+::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb{
+    background: hsl(0,0%,80%);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: hsl(0,0%,70%);
+}
+
+.container{
+    max-width: 1440px;
+    min-height: 100vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.heading{
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+    border-bottom: 1px solid gainsboro;
+    padding: 20px 60px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.heading i{
+    font-size: 40px;
+}
+
+.item-flex{
+    display: flex;
+    flex-grow: 1;
+}
+
+.checkout{
+    width: 70%;
+    padding: 40px 60px;
+    background: white;
+    border-right: 1px solid gainsboro;
+}
+
+.section-heading{
+    color: skyblue;
+    margin-bottom: 30px;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.payment-form{
+    margin-bottom: 40px;
+}
+
+.payment-method{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.payment-method .method{
+    border: 1px solid silver;
+    border-radius: 5px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    gap: 20px;
+    cursor: pointer;
+}
+
+.payment-method .selected{
+    border-color: greenyellow;
+}
+
+.payment-method .method i{
+    font-size: 20px;
+}
+
+.payment-method .method .fa-check-circle{
+    margin-left: auto;
+    color: black;
+}
+
+.payment-method .method .fa-check-circle-o{
+    color: black;
+    margin-left: auto;
+}
+
+.payment-method .method .fa-paypal{
+    color: blue;
+}
+
+.payment-method .method .fa-credit-card-alt{
+    color: blueviolet;
+}
+
+.payment-method span{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.label-default{
+    padding-left: 10px;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: gray;
+}
+
+.input-default{
+    background: gainsboro;
+    border-radius: 5px;
+    color: grey;
+}
+
+.payment-form input{
+    padding: 10px 15px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.cardholder-name, .card-number{
+    margin-bottom: 20px;
+}
+
+.card-number input, .cvv input{
+    letter-spacing: 3px;
+}
+
+.input-flex{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.input-flex .expire-date, .input-flex .cvv{
+    width: 50%;
+}
+
+.expire-date .input-flex{
+    color: gray;
+    gap: 13px;
+}
+
+.expire-date .input-flex input{
+    text-align: center;
+}
+
+.btn{
+    border-radius: 5px;
+}
+
+.btn:active{
+    transform:scale(0.99);
+}
+
+.btn:focus{
+    color: #fff;
+    background: #4707f5;
+    outline: 2px solid #4707f5;
+    outline-offset: 2px;
+    transition: 0.5s;
+}
+
+.btn-primary{
+    background: #4707f5;
+    font-weight: 600;
+    font-size: 20px;
+    color: #fff;
+    padding: 13px 45px;
+}
+
+.btn-primary b{
+    margin-right: 10px;
+}
+
+.cart{
+    width: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.cart-item-box{
+    padding: 40px 60px;
+    margin-bottom: auto;
+}
+
+.cart-item-box .section-heading{
+    color: green;
+}
+
+.product-card:not(:last-child){
+    margin-bottom: 20px;
+}
+
+.product-card .card{
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.card .product-img{
+    border-radius: 5px;
+}
+
+.card .detail .product-name{
+    font-weight: 600;
+    font-size: 15px;
+    color: gray;
+    margin-bottom: 10px;
+}
+
+.card .detail .wrapper{
+    display: flex;
+    gap: 20px;
+}
+
+.product-qty{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.product-qty button{
+    background: white;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-qty button:active, .product-close-btn:active i {
+    transform: scale(0.95);
+}
+
+.product-qty button i {
+    --ionicon-strock-width:60px;
+    font-size: 10px;
+}
+
+.product-close-btn{
+    position:absolute;
+    top: 0;
+    right: 0;
+}
+
+.product-close-btn i{
+    font-size: 25px;
+    color: silver;
+}
+
+.product-close-btn:hover i{
+    color: red;
+}
+
+.discount-token{
+    padding: 40px 60px;
+    border-top: 1px solid gainsboro;
+    border-bottom: 1px solid gainsboro;
+}
+
+.wrapper-flex{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.wrapper-flex input{
+    padding: 12px 15px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.btn-outline{
+    padding: 10px 25px;
+    border: 1px solid blue;
+}
+
+.btn-outline:hover{
+    background: blue;
+    color: #fff;
+}
+
+.amount{
+    padding: 40px 5px;
+}

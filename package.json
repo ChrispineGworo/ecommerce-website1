@@ -1,0 +1,32 @@
+{
+  "name": "e-commerceweb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@google-cloud/firestore": "^6.5.0",
+    "@google-cloud/storage": "^6.9.5",
+    "aws-sdk": "^2.1353.0",
+    "bcrypt": "^5.1.0",
+    "dotenv": "^16.0.3",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "express.js": "^1.0.0",
+    "firebase-admin": "^11.5.0",
+    "firebase-functions": "^4.2.1",
+    "formidable": "^2.1.1",
+    "formidable-serverless": "^1.1.1",
+    "imagekit-javascript": "^1.5.5",
+    "node-fetch": "^3.3.1",
+    "node-sass": "^8.0.0",
+    "nodemon": "^2.0.22",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "uuid-v4": "^0.1.0"
+  }
+}
